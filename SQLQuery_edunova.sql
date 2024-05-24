@@ -12,6 +12,10 @@
 --  vaucer bit
 --  );
 
+
+-- nema nista novo
+-- samo da se vidi
+
 --   create table grupe(
 --   sifra int,
 --   naziv varchar(20),
