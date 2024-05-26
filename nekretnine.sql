@@ -1,7 +1,5 @@
 --create database nekretnine;
 
--- kreirana tablica stan
-
 --create table stan(
 --idstana int primary key,
 --kvadratura int,
@@ -20,9 +18,9 @@
 
  --create table najam(
  --idnajma int primary key,
- --stan int,
- --zakupac varchar(50),
+ --idstana int,
+ --idzakupaca int,
  --datumpocetka date,
  --datumzavrsetka date,
- --cijena money
+ --cijenanajma money
  --);
