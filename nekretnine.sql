@@ -10,24 +10,23 @@ use nekretnine;
 create table stan(
 idstana int not null primary key identity(1,1),
 kvadratura int not null,
-adresa varchar(100) not null,  --ali se null ne piše nego se podrazumjeva
+adresa varchar(100) not null,  -- kad ne pisemo not null, se podrazumjeva da je null
 oprema varchar(100),
 slika varchar(100)
 );
 
- --create table zakupac(
- --idzakupca int primary key,
- --ime varchar(100),
- --prezime varchar(100),
- --email varchar(100),
- --telefon int
- --);
+ create table zakupac(
+ idzakupca int not null primary key identity(1,1),
+ ime varchar(100),
+ prezime varchar(100),
+ email varchar(100) not null,
+ telefon int
+ );
 
- --create table najam(
- --idnajma int primary key,
- --idstana int,
- --idzakupaca int,
- --datumpocetka date,
- --datumzavrsetka date,
- --cijenanajma money
- --);
+ create table najam(
+ idstana int not null,
+ idzakupaca int not null,
+ datumpocetka date,
+ datumzavrsetka date,
+ cijenanajma money
+ );
