@@ -15,7 +15,7 @@ oprema varchar(100),
 slika varchar(100)
 );
 
- create table zakupac(
+ create table zakupca(
  idzakupca int not null primary key identity(1,1),
  ime varchar(100),
  prezime varchar(100),
@@ -25,8 +25,12 @@ slika varchar(100)
 
  create table najam(
  idstana int not null,
- idzakupaca int not null,
+ idzakupca int not null,
  datumpocetka date,
  datumzavrsetka date,
  cijenanajma money
  );
+
+ alter table najam add foreign key (idstana) references stan(idstana);
+ alter table najam add foreign key (idzakupca) references zakupca(idzakupca);
+
