@@ -25,6 +25,7 @@ slika varchar(100)
  );
 
  create table najmovi(
+ idnajmovi int not null primary key identity(1,1),
  idstanovi int not null,
  idzakupci int not null,
  datumpocetka date,
