@@ -45,10 +45,10 @@ insert into stanovi (kvadratura,adresa,oprema,slika) values
 
 select * from zakupci;
 insert into zakupci (ime,prezime,email,telefon) values 
-('Kristina','Andric','fashionbykriss@gmail.com',031511271),
-('Tomislav','Rogic','tomislav.rogic@gmail.com',025485645),
-('Lara','Bakalar','larabakalar@gmail.com',051425152),
-('Tihomir','Pametnjakovic','tihomir.pametnjakovic@gmail.com',034253548);
+('Kristina','Andric','fashionbykriss@gmail.com','031511271'),
+('Tomislav','Rogic','tomislav.rogic@gmail.com','025485645'),
+('Lara','Bakalar','larabakalar@gmail.com','051425152'),
+('Tihomir','Pametnjakovic','tihomir.pametnjakovic@gmail.com','034253548');
 
 select * from najmovi;
 insert into najmovi (idstanovi,idzakupci,datumpocetka,datumzavrsetka,cijenanajma) values 
