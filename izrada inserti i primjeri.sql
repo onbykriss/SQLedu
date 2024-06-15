@@ -1,8 +1,8 @@
-use master;
+﻿use master;
 go
 drop database if exists zellamsee;
 go
-create database zellamsee;
+create database zellamsee collate Croatian_CI_AS;
 go
 use zellamsee;
 
