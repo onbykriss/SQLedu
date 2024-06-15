@@ -16,8 +16,8 @@ CREATE TABLE zakupci (
 
 CREATE TABLE najmovi (
     idnajmovi SERIAL PRIMARY KEY,
-    idstanovi INT NOT NULL REFERENCES stanovi(idstanovi),
-    idzakupci INT NOT NULL REFERENCES zakupci(idzakupci),
+    idstanovi INT NOT NULL,
+    idzakupci INT NOT NULL,
     datumpocetka DATE,
     datumzavrsetka DATE,
     cijenanajma NUMERIC
